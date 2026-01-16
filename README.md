@@ -65,7 +65,7 @@ project/
 ````
 
 ## Requirements and Setup
-- CARLA Simulator
+- CARLA Simulator (For Guidance refer to the install guide given in the **Docs Folder** seperate for windows and Linux users)
 - Python 3
 - Required Python package:
 
