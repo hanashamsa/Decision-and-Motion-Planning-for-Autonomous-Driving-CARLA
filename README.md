@@ -53,8 +53,9 @@ Profiles are updated in real time to ensure physically plausible and comfortable
 ```
 
 project/
-├── pythonAPI/
-│   ├── carla/                 # CARLA Python API
+├── tests/
+│   ├── test0/
+│   └── ...            
 ├── planners/
 │   ├── velocity_profile.py # Velocity profile generation
 │   ├── utils.py            # Helper functions
