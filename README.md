@@ -1,4 +1,4 @@
-# Hierarchical Decision and Motion Planning for Autonomous Driving (CARLA)
+# Decision and Motion Planning for Autonomous Driving (CARLA)
 
 ## Description
 This project implements a hierarchical planning system for autonomous driving in the CARLA simulator. It integrates behavioral decision-making and motion planning to generate safe, smooth, and feasible vehicle trajectories under different driving scenarios.
@@ -53,13 +53,14 @@ Profiles are updated in real time to ensure physically plausible and comfortable
 ```
 
 project/
-├── carla/                  # CARLA Python API
-├── planning/
+├── pythonAPI/
+│   ├── carla/                 # CARLA Python API
+├── planners/
 │   ├── velocity_profile.py # Velocity profile generation
 │   ├── utils.py            # Helper functions
 │   ├── structures.py       # State and maneuver definitions
 │   └── ...
-└── run_planner.py          # Entry point for running the planner
+└── SimulatorAPI.py          # Entry point for running the planner
 
 ````
 
@@ -96,14 +97,3 @@ pytest tests -p no:warnings -s
 * Smooth state transitions and realistic vehicle motion in simulation
 * Safe path selection through collision-aware trajectory evaluation
 
-## Limitations and Assumptions
-
-* Behavioral logic is rule-based and may struggle in ambiguous scenarios
-* Cubic spiral generation is computationally more expensive than simpler methods
-* Designed for structured urban driving scenarios within simulation
-
-## References
-
-* CARLA Autonomous Driving Simulator
-* Finite State Machines for behavioral planning
-* Cubic spiral trajectory generation for autonomous vehicles
